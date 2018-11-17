@@ -52,5 +52,5 @@ if (requireNum % processItemLen) {
 ```
 
 详细逻辑见 示例demo:
-
-<image src="./process.gif"/>
+## <span style="color: #f00">录制gif比较卡顿，真实效果如丝般顺滑</span>
+<image style="width: 400px;" src="./process.gif"/>
