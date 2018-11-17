@@ -38,18 +38,10 @@
 }
 ```
 
-组件核心逻辑:
+组件核心功能:
 
-```javascript
-//达成在非整除刻度上时的特殊处理
-if (requireNum % processItemLen) {
-    scaleList.push({
-        scale: '达成',
-        left: i === (handleData.shang + 1) ? `${processLen - 2}rpx` : `${(i+remainder) * (processLen * processItemLen / maxCount)}rpx`,
-        numLeft: `${(i+remainder) * (processLen * processItemLen / maxCount) - 20}rpx`,
-    });
-}
-```
+1. 任意设置进度条长度，样式呈现上有极大灵活性。
+2. 任意设置刻度值，对不能整除的一些刻度和关键性位置做了特别处理。
 
 详细逻辑见 示例demo:
 ## <span style="color: #f00">录制gif比较卡顿，真实效果如丝般顺滑</span>
